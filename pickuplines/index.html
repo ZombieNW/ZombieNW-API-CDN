@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>ZombieNW API</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $.getJSON("index.json", function(data){
+                const randomElement = data[Math.floor(Math.random() * data.length)];
+                document.write(JSON.stringify(randomElement));
+            })
+        </script>
+    </body>
+</html>
